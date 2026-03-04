@@ -2,6 +2,12 @@
 --  two people -'Raul Gutierrez' and 
   -- 1. The SQL queries you ran
 
+  -- --------------------------
+  --  Inner Join
+  SELECT person.id FROM person INNER JOIN interviews ON person.id = interviews.id;
+
+  -- -----------------------------------
+
   SELECT id FROM crime_scene WHERE location='Coral Bay Marina';
   -- Location ID is 43
 -- ---------

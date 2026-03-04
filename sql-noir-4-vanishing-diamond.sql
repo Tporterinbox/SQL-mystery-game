@@ -4,6 +4,10 @@
  SELECT locationFROM crime_scene;
   -- Fontainebleau Hotel
 -- ----------
+-- Inner Join 
+SELECT guest.id FROM guest INNER JOIN final_interviews ON guest.id = final_interviews.id;
+
+-- ------------------------
  SELECT id FROM crime_scene WHERE location = 'Fontainebleau Hotel'
 ;
   -- ID is 48
@@ -33,6 +37,8 @@ SELECT id FROM final_interviews WHERE confession =
 ----------------
 
 SELECT name FROM  guest WHERE id= '105';
+
+
 
 -- Mike Manning 
   -- ---------------------------------------------------
